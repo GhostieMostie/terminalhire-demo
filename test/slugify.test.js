@@ -15,3 +15,9 @@ test('trims leading and trailing hyphens', () => {
   assert.equal(slugify('  spaced out  '), 'spaced-out');
   assert.equal(slugify('Trailing punctuation!!!'), 'trailing-punctuation');
 });
+
+test('supports a custom separator without changing default behavior', () => {
+  assert.equal(slugify('Hello, World!', '_'), 'hello_world');
+  assert.equal(slugify('  spaced  out  ', '_'), 'spaced_out');
+  assert.equal(slugify('Hello, World!'), 'hello-world');
+});
