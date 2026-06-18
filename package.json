@@ -1,0 +1,11 @@
+{
+  "name": "slugify-demo",
+  "version": "1.0.0",
+  "description": "Tiny URL-slug helper — demo repo for a Terminalhire claim→worktree→submit walkthrough.",
+  "type": "module",
+  "main": "src/slugify.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
